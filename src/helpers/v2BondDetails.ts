@@ -100,7 +100,7 @@ const WbtcDetails: V2BondDetails = {
 };
 
 const OhmDaiDetails: V2BondDetails = {
-  name: "OHM-DAI LP",
+  name: "BLKD-DAI LP",
   bondIconSvg: ["OHM", "DAI"],
   async pricingFunction(provider, quoteToken) {
     return pricingFunctionHelper(provider, quoteToken, "olympus", "dai");
@@ -115,7 +115,7 @@ const OhmDaiDetails: V2BondDetails = {
 };
 
 const OhmEthDetails: V2BondDetails = {
-  name: "OHM-ETH LP",
+  name: "BLKD-ETH LP",
   bondIconSvg: ["OHM", "wETH"],
   async pricingFunction(provider, quoteToken) {
     return pricingFunctionHelper(provider, quoteToken, "olympus", "ethereum");
@@ -142,12 +142,12 @@ export const UnknownDetails: V2BondDetails = {
  */
 export const v2BondDetails: { [key: number]: { [key: string]: V2BondDetails } } = {
   [NetworkId.TESTNET_RINKEBY]: {
-    ["0xb2180448f8945c8cc8ae9809e67d6bd27d8b2f2c"]: DaiDetails,
-    ["0x5ed8bd53b0c3fa3deabd345430b1a3a6a4e8bd7c"]: DaiDetails,
-    ["0x2f7249cb599139e560f0c81c269ab9b04799e453"]: FraxDetails,
-    ["0xc778417e063141139fce010982780140aa0cd5ab"]: EthDetails,
+    [("0x2282eD292D0833de65a92f7B4D20aaaD5B26ABf2").toLowerCase()]: DaiDetails,
+   // ["0x5ed8bd53b0c3fa3deabd345430b1a3a6a4e8bd7c"]: DaiDetails,
+    [("0x7c10F68182Bf3B3c8B0B98Bc9ed9319dcA739184").toLowerCase()]: FraxDetails,
+    [("0xc778417e063141139fce010982780140aa0cd5ab").toLowerCase()]: EthDetails,
     // ["0xb2180448f8945c8cc8ae9809e67d6bd27d8b2f2c"]: CvxDetails, // we do not have CVX rinkeby in previous bonds
-    ["0x80edbf2f58c7b130df962bb485c28188f6b5ed29"]: OhmDaiDetails,
+    [("0x97aa6b330967fc46Bd819535ae86701275a872d9").toLowerCase()]: OhmDaiDetails,
   },
   [NetworkId.MAINNET]: {
     ["0x6b175474e89094c44da98b954eedeac495271d0f"]: DaiDetails,

@@ -8,7 +8,7 @@ const query = `
       marketCap
       totalSupply
       nextEpochRebase
-      totalValueLocked
+     
       nextDistributedOhm
       treasuryMarketValue
       ohmCirculatingSupply
@@ -17,7 +17,7 @@ const query = `
     }
   }
 `;
-
+// totalValueLocked
 interface ProtocolMetrics {
   readonly timestamp: string;
   readonly marketCap: string;

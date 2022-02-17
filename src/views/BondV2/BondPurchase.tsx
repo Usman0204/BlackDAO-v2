@@ -59,7 +59,7 @@ function BondPurchase({
           t`Max capacity is ${maxBondable} ${bond.displayName} for ${trim(
             +bond.maxPayoutOrCapacityInBase,
             4,
-          )} sOHM. Click Max to autocomplete.`,
+          )} sBLKD. Click Max to autocomplete.`,
         ),
       );
     } else {
@@ -133,7 +133,7 @@ function BondPurchase({
                     <em>
                       <Typography variant="body1" align="center" color="textSecondary">
                         <Trans>First time bonding</Trans> <b>{bond.displayName}</b>? <br />{" "}
-                        <Trans>Please approve Olympus Dao to use your</Trans> <b>{bond.displayName}</b>{" "}
+                        <Trans>Please approve BLACK Dao to use your</Trans> <b>{bond.displayName}</b>{" "}
                         <Trans>for bonding</Trans>.
                       </Typography>
                     </em>
@@ -198,20 +198,20 @@ function BondPurchase({
               <Typography>
                 <Trans>You Will Get</Trans>
               </Typography>
-              <InfoTooltip message="Actual sOHM amount you receive will be higher at the end of the term due to rebase accrual."></InfoTooltip>
+              <InfoTooltip message="Actual sBLKD amount you receive will be higher at the end of the term due to rebase accrual."></InfoTooltip>
             </Box>
             <Typography id="bond-value-id" className="price-data">
               {isBondLoading ? (
                 <Skeleton width="100px" />
               ) : (
                 `${trim(Number(quantity) / bond.priceToken, 4) || "0"} ` +
-                `sOHM (≈${trim(+quantity / bond.priceToken / +currentIndex, 4) || "0"} gOHM)`
+                `sBLKD (≈${trim(+quantity / bond.priceToken / +currentIndex, 4) || "0"} gBLKD)`
               )}
             </Typography>
           </Box>
           <DataRow
             title={t`Max You Can Buy`}
-            balance={`${trim(+bond.maxPayoutOrCapacityInBase, 4) || "0"} sOHM (≈${
+            balance={`${trim(+bond.maxPayoutOrCapacityInBase, 4) || "0"} sBLKD (≈${
               trim(+bond.maxPayoutOrCapacityInQuote, 4) || "0"
             } ${bond.displayName})`}
             isLoading={isBondLoading}
@@ -235,7 +235,7 @@ function BondPurchase({
         <em>
           <Typography variant="body2">
             Important: New bonds are auto-staked (accrue rebase rewards) and no longer vest linearly. Simply claim as
-            sOHM or gOHM at the end of the term.
+            sBLKD or gBLKD at the end of the term.
           </Typography>
         </em>
       </div>

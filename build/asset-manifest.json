@@ -13,8 +13,8 @@
     "ko-messages.js": "./static/js/ko-messages.d89c9dfd.chunk.js",
     "ko-messages.js.map": "./static/js/ko-messages.d89c9dfd.chunk.js.map",
     "main.css": "./static/css/main.662ae264.chunk.css",
-    "main.js": "./static/js/main.062bab6f.chunk.js",
-    "main.js.map": "./static/js/main.062bab6f.chunk.js.map",
+    "main.js": "./static/js/main.23b3306f.chunk.js",
+    "main.js.map": "./static/js/main.23b3306f.chunk.js.map",
     "pl-messages.js": "./static/js/pl-messages.9bbb9dad.chunk.js",
     "pl-messages.js.map": "./static/js/pl-messages.9bbb9dad.chunk.js.map",
     "pt-messages.js": "./static/js/pt-messages.14507b11.chunk.js",
@@ -63,6 +63,6 @@
     "static/js/runtime-main.17b2e988.js",
     "static/js/14.b8f88ae1.chunk.js",
     "static/css/main.662ae264.chunk.css",
-    "static/js/main.062bab6f.chunk.js"
+    "static/js/main.23b3306f.chunk.js"
   ]
 }
